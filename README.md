@@ -1,16 +1,14 @@
-### Hi there 👋
+// main.c
+#include <stdio.h>
+#include <stdlib.h>
 
-<!--
-**ThomasYun0120/ThomasYun0120** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+#define MAX_MESSAGE_SIZE 30
 
-Here are some ideas to get you started:
+int main(int argc, char **argv) {
+  char *str = malloc(sizeof(char) * MAX_MESSAGE_SIZE);
+  str = argv[1];
+  puts(str);
+  free(str);
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+  return 0;
+}
